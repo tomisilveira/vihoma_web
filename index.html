@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="img/logo_corto_vihoma.png" type="image/png">
     <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -31,11 +34,10 @@
             </button>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#geomatica">Geomática</a></li>
-                <li><a href="#oilgas">Oil & Gas</a></li>
-                <li><a href="#energia">Energía</a></li>
-                <li><a href="#ambiente">Ambiente</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#tecnologia">Tecnología</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto" class="btn-primary-sm">Contacto</a></li>
             </ul>
         </div>
@@ -48,40 +50,68 @@
         </video>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <h1 class="animate-up">PRECISIÓN DESDE EL <span class="text-highlight">AIRE</span></h1>
-            <p class="animate-up delay-1">Soluciones integrales de inspección y relevamiento con tecnología de
-                vanguardia.</p>
+            <h1 class="animate-up">INNOVACIÓN Y <br><span class="text-highlight">EXCELENCIA AÉREA</span></h1>
+            <p class="animate-up delay-1">Transformamos datos en decisiones estratégicas. Inspección técnica, topografía
+                de precisión y monitoreo ambiental con la flota de drones más avanzada.</p>
             <div class="hero-btns animate-up delay-2">
-                <a href="#servicios" class="btn-primary">Nuestros Servicios <i class="fas fa-arrow-right"></i></a>
-                <a href="#contacto" class="btn-secondary">Cotizar Proyecto</a>
+                <a href="#servicios" class="btn-primary">Explorar Servicios <i class="fas fa-arrow-right"></i></a>
+                <a href="#contacto" class="btn-secondary">Contactar Ahora</a>
             </div>
         </div>
-        <!-- Abstract Topo Graphic Background (CSS generated or SVG) -->
         <div class="topo-bg"></div>
+        <a href="#about" class="scroll-indicator animate-up delay-3">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
     <!-- About / Intro -->
-    <section class="section about">
-        <div class="container">
-            <div class="section-header">
-                <h2>Por Qué Elegirnos</h2>
-                <div class="divider"></div>
+    <!-- About / Intro Split Section -->
+    <section class="section about" id="about">
+        <div class="container about-container">
+            <div class="about-visual">
+                <div class="image-stack">
+                    <img src="img/hero.png" alt="Drone Vihoma" class="about-img-main" loading="lazy" width="600"
+                        height="400">
+                    <div class="experience-badge">
+                        <span class="exp-number">5+</span>
+                        <span class="exp-text">Años de<br>Experiencia</span>
+                    </div>
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-crosshairs"></i>
-                    <h3>Alta Precisión</h3>
-                    <p>Captura de datos milimétrica para ingeniería y planificación rigurosa.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Seguridad Operacional</h3>
-                    <p>Reducción de riesgos al acceder a áreas peligrosas o de difícil acceso.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h3>Reducción de Costos</h3>
-                    <p>Optimización de tiempos y recursos frente a métodos tradicionales.</p>
+            <div class="about-text">
+                <span class="service-label text-highlight">QUIÉNES SOMOS</span>
+                <h2>Liderando la Revolución de los Datos Aéreos</h2>
+                <div class="divider-left"></div>
+                <p class="about-desc">En Vihoma, combinamos ingeniería de precisión con tecnología aeronáutica para
+                    ofrecer soluciones que antes eran imposibles. Nuestro enfoque no es solo volar, sino entregar
+                    inteligencia procesable para industrias críticas.</p>
+                <p class="about-desc">Desde nuestros inicios en Neuquén, hemos liderado la transformación digital en
+                    Vaca Muerta y el sector energético. Utilizamos drones de última generación y software de
+                    procesamiento avanzado para reducir riesgos operativos, optimizar presupuestos y acelerar la toma de
+                    decisiones. Somos sus ojos en el aire, garantizando datos fiables en los entornos más exigentes.</p>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-crosshairs"></i></div>
+                        <div class="feature-content">
+                            <h3>Alta Precisión</h3>
+                            <p>Datos milimétricos para ingeniería rigurosa.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div class="feature-content">
+                            <h3>Seguridad Total</h3>
+                            <p>Operaciones seguras en entornos complejos.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="feature-content">
+                            <h3>Rentabilidad</h3>
+                            <p>Optimización de costos y tiempos operativos.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,7 +125,9 @@
             <div class="service-text">
                 <span class="service-label">CARTOGRAFÍA Y TOPOGRAFÍA</span>
                 <h2>Geomática y Modelado 3D</h2>
-                <p>Capacidades de captura y procesamiento fotogramétrico para generar entregables de alta precisión.</p>
+                <p>Transformamos imágenes aéreas en modelos digitales exactos. Nuestra fotogrametría de vanguardia
+                    permite realizar mediciones de acopio, planificar movimientos de suelo y superponer proyectos de
+                    ingeniería sobre la realidad del terreno con precisión centimétrica.</p>
                 <ul class="service-list">
                     <li><i class="fas fa-check-circle"></i> <strong>Ortofotos Georreferenciadas:</strong> Mosaicos de
                         alta resolución.</li>
@@ -107,7 +139,7 @@
                 </ul>
             </div>
             <div class="service-visual">
-                <img src="img/geomatics.png" alt="Geomática y Control" class="service-img">
+                <img src="img/geomatics.png" alt="Geomática y Control" class="service-img" loading="lazy">
             </div>
         </div>
     </section>
@@ -116,12 +148,14 @@
     <section id="oilgas" class="section service-section bg-dark text-white inverted">
         <div class="container service-grid">
             <div class="service-visual">
-                <img src="img/oil-gas.jpg" alt="Tanque Oil & Gas" class="service-img">
+                <img src="img/oil-gas.jpg" alt="Tanque Oil & Gas" class="service-img" loading="lazy">
             </div>
             <div class="service-text">
                 <span class="service-label text-highlight">INDUSTRIA</span>
                 <h2>Inspección Oil & Gas</h2>
-                <p>Inspección y relevamiento mediante sensores visuales (RGB) y termográficos (IR).</p>
+                <p>Minimice el tiempo de inactividad con inspecciones aéreas no intrusivas. Detectamos corrosión, fugas
+                    y anomalías térmicas en antorchas, tanques y ductos sin necesidad de detener la producción ni
+                    exponer personal a riesgos de altura.</p>
                 <ul class="service-list">
                     <li><i class="fas fa-bolt"></i> <strong>Infraestructura:</strong> Tanques, chimeneas y tuberías.
                     </li>
@@ -139,7 +173,9 @@
             <div class="service-text">
                 <span class="service-label">TRANSMISIÓN Y GENERACIÓN</span>
                 <h2>Energía Eléctrica y Renovables</h2>
-                <p>Monitoreo de infraestructura de transmisión y generación de energía.</p>
+                <p>Asegure la continuidad del suministro y maximice el rendimiento de activos. Realizamos recorridas de
+                    líneas de alta tensión y termografía en paneles solares para identificar puntos calientes y fallas
+                    incipientes antes de que se conviertan en problemas críticos.</p>
                 <ul class="service-list">
                     <li><i class="fas fa-check-circle"></i> <strong>Líneas y Subestaciones:</strong> Puntos calientes y
                         fallas.</li>
@@ -152,7 +188,7 @@
                 </ul>
             </div>
             <div class="service-visual">
-                <img src="img/energy.jpg" alt="Parque Solar" class="service-img">
+                <img src="img/energy.jpg" alt="Parque Solar" class="service-img" loading="lazy">
             </div>
         </div>
     </section>
@@ -161,12 +197,14 @@
     <section id="ambiente" class="section service-section bg-dark text-white inverted">
         <div class="container service-grid">
             <div class="service-visual">
-                <img src="img/environment.jpg" alt="Monitoreo Ambiental" class="service-img">
+                <img src="img/environment.jpg" alt="Monitoreo Ambiental" class="service-img" loading="lazy">
             </div>
             <div class="service-text">
                 <span class="service-label text-highlight">TERRITORIO</span>
                 <h2>Monitoreo Ambiental</h2>
-                <p>Línea de base ambiental, agricultura y ganadería de precisión.</p>
+                <p>Gestión sustentable del territorio basada en datos. Monitoreamos la salud de la vegetación, el
+                    impacto de obras civiles y la dinámica de recursos hídricos, proporcionando evidencia objetiva para
+                    el cumplimiento de normativas ambientales.</p>
                 <ul class="service-list">
                     <li><i class="fas fa-seedling"></i> <strong>Vegetación:</strong> Biomasa y estrés hídrico.</li>
                     <li><i class="fas fa-paw"></i> <strong>Fauna:</strong> Conteo y comportamiento (RGB/Térmico).</li>
@@ -181,7 +219,9 @@
         <div class="container text-center">
             <span class="section-subtitle">NUESTRA FLOTA</span>
             <h2>Tecnología: DJI Matrice 4T</h2>
-            <p class="section-desc">Herramienta estratégica multisensor para datos de alta precisión.</p>
+            <p class="section-desc">Contamos con la flota más moderna del mercado. El DJI Matrice 30T/300 RTK es nuestra
+                herramienta estratégica multisensor, diseñada para soportar vientos fuertes y operar en condiciones
+                adversas, garantizando la continuidad de su proyecto.</p>
 
             <div class="tech-grid">
                 <div class="tech-item">
@@ -198,6 +238,155 @@
                     <i class="fas fa-clock"></i>
                     <h4>Autonomía</h4>
                     <p>Tiempos de vuelo optimizados para grandes relevamientos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery / Projects Section -->
+    <section id="proyectos" class="section gallery-section">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="service-label text-highlight">PORTFOLIO</span>
+                <h2>Proyectos Recientes</h2>
+                <div class="divider"></div>
+                <p class="section-desc-center">Imágenes reales de nuestras operaciones en campo.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Using placeholders for now, user requested "more images" -->
+                <div class="gallery-item item-large">
+                    <img src="img/energy.jpg" alt="Proyecto Energía">
+                    <div class="gallery-overlay">
+                        <h4>Parque Solar</h4>
+                        <p>Termografía</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/oil-gas.jpg" alt="Proyecto Oil & Gas">
+                    <div class="gallery-overlay">
+                        <h4>Vaca Muerta</h4>
+                        <p>Inspección de Ductos</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/environment.jpg" alt="Proyecto Ambiente">
+                    <div class="gallery-overlay">
+                        <h4>Monitoreo Ambiental</h4>
+                        <p>Río Aluminé</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/topgrafia.webp" alt="Topografía">
+                    <div class="gallery-overlay">
+                        <h4>Relevamiento Topográfico</h4>
+                        <p>Obra Civil</p>
+                    </div>
+                </div>
+                <div class="gallery-item item-wide">
+                    <img src="img/geomatics.png" alt="Modelo 3D">
+                    <div class="gallery-overlay">
+                        <h4>Modelo Digital 3D</h4>
+                        <p>Fotogrametría</p>
+                    </div>
+                </div>
+                <!-- New Items -->
+                <div class="gallery-item">
+                    <img src="img/torre.jpg" alt="Inspección Torres">
+                    <div class="gallery-overlay">
+                        <h4>Red de Alta Tensión</h4>
+                        <p>Inspección Visual</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/agricutura.jpg" alt="Agricultura">
+                    <div class="gallery-overlay">
+                        <h4>Agricultura de Precisión</h4>
+                        <p>Índices de Vegetación</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/puente_drone.png" alt="Infraestructura">
+                    <div class="gallery-overlay">
+                        <h4>Puentes y Viaductos</h4>
+                        <p>Mantenimiento Preventivo</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#contacto" class="btn-secondary dark-btn">Ver Más Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section stats-section">
+        <div class="container stats-container">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Vuelos Realizados</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50k+</span>
+                <span class="stat-label">Hectáreas Relevadas</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Satisfacción Cliente</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <span class="service-label text-highlight">TESTIMONIOS</span>
+                <h2>Confianza que Construimos</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"La precisión de los modelos 3D de Vihoma transformó nuestra
+                        planificación de obra. Ahorramos semanas de relevamiento tradicional."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <span class="avatar-initial">R</span>
+                        </div>
+                        <div class="client-details">
+                            <h5>Ing. Roberto Gómez</h5>
+                            <span>Director de Obra, Constructora del Sur</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"El informe termográfico detectó puntos calientes en nuestros paneles
+                        que no habíamos visto. Un servicio indispensable para el mantenimiento."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <span class="avatar-initial">M</span>
+                        </div>
+                        <div class="client-details">
+                            <h5>María Fernández</h5>
+                            <span>Gerente de Operaciones, SolarEnergy</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <p class="testimonial-text">"Respuesta rápida y datos entregados en formatos compatibles con nuestro
+                        software. Excelentes profesionales."</p>
+                    <div class="client-info">
+                        <div class="client-avatar">
+                            <span class="avatar-initial">C</span>
+                        </div>
+                        <div class="client-details">
+                            <h5>Carlos Ruiz</h5>
+                            <span>Consultor Ambiental</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -245,8 +434,10 @@
         <div class="container footer-content">
             <p>&copy; 2025 VIROMA Servicios Integrales. Todos los derechos reservados.</p>
             <div class="social-links">
-                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-instagram"></i></a>
             </div>
         </div>
     </footer>

@@ -40,25 +40,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Fade-in elements
-    const animatedElements = document.querySelectorAll('.service-text, .service-visual, .feature-card, .tech-item');
-    animatedElements.forEach(el => {
+    // Fixed selector: .feature-item instead of .feature-card, added gallery/testimonials
+    const animatedElements = document.querySelectorAll('.service-text, .service-visual, .feature-item, .tech-item, .section-header, .testimonial-card, .gallery-item');
+    animatedElements.forEach((el, index) => {
         el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out`; // added delay logic
         observer.observe(el);
     });
 
-    // Add class for animation trigger
-    // We are adding the event listener to a class we just added to the observer
-    // But we need CSS to actually handle the 'in-view' class
-    const style = document.createElement('style');
-    style.innerHTML = `
-        .in-view {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
+    // Lightbox Functionality
+    const galleryItems = document.querySelectorAll('.gallery-item img');
+
+    // Create lightbox elements
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+        <div class="lightbox-close">&times;</div>
+        <img src="" alt="Full Screen Image">
     `;
-    document.head.appendChild(style);
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector('img');
+    const lightboxClose = lightbox.querySelector('.lightbox-close');
+
+    galleryItems.forEach(img => {
+        img.closest('.gallery-item').addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+    });
+
+    const closeLightbox = () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = '';
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    // Escape key to close
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
 
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
